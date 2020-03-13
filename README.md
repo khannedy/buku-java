@@ -1,27 +1,26 @@
 # Belajar Java
 
-![Jalur Belajar Java](http://www.plantuml.com/plantuml/png/dPB1yfem4CRlFaLUm5Ve36hjrDQHYhM73eU5h9eQ4YTihBnzbte931F-S6JtztsxNvRVEtY2s7eZeK93e7EnN7uIx_AX-8CbYODJt48fKcUl3gfAcMk-64L2f-zG5H8cYjPMQ-QKDHE5HxpqX44bu5O8Hfn1AmbHE7iudi3xE6Gc31IOPUGGAkxtTv_8d6xCI6Q2h-whcD8xXwPin4zIMf72EXU1vtZGABm1WW9gR2UPjlrKrB0aqWpKARfQrSJheKZIhwmRt22g2D-xSu6aVaH-o76ewzPc4RiqOUdW8iEmMCJkyDRmoFy_wX6X9EjuGA_IzVw5nLRxLslTdzRdzkSrktM-1xrcFCS9whlu_CBIjnSIOAJ8oXjAhriqddgApt34iBgtvcetgnaPli7b3ZDqHoWAHViVBEtV9CJMsdeflW3XNsZYTyWulrFK33dEm3Hwker0IKaUoBh1nNeP-8wrrnyXp-0rvVy0)
-
 ```puml
 [Java Fundamental] --> [Java Object Oriented Programming]
 [Java Object Oriented Programming] --> [Java Lambda]
-[Java Object Oriented Programming] --> [Java Collection]
 [Java Object Oriented Programming] --> [Java Reflection]
 [Java Reflection] --> [Java Bean Validation]
 [Java Reflection] --> [Spring Core]
-[Java Lambda] --> [Java Stream]
-[Java Collection] --> [Java Stream]
+[Java Lambda] --> [Java Collection]
 [Java Collection] --> [Java Thread]
-[Java Thread] --> [Java Concurrency Utilities] 
+[Java Object Oriented Programming] --> [Java Internationalization]
+[Java Internationalization] --> [Java Bean Validation]
+[Java Internationalization] --> [Spring Core]
+[Java Thread] --> [Java Concurrency Utilities]
+[Java Thread] --> [Java Stream] 
 [Java Collection] --> [Java Bean Validation]
 [Java Collection] --> [Java Database Connectivity]
 [Java Database Connectivity] --> [Java Persistence API]
 [Java Bean Validation] --> [Java Persistence API]
-[Spring Core] --> [Spring Aspect Oriented Programming]
 [Spring Aspect Oriented Programming] --> [Spring Data JPA]
 [Java Persistence API] --> [Spring Data JPA] 
-[Java Concurrency Utilities] --> [Project Reactor]
-[Project Reactor] --> [Spring WebFlux] 
+[Java Concurrency Utilities] --> [Reactive Programming]
+[Reactive Programming] --> [Spring WebFlux] 
 [Spring Data JPA] --> [Spring WebMVC]
 [Spring WebMVC] --> [Spring WebFlux]
 [Spring Aspect Oriented Programming] --> [Spring Task Execution and Scheduling]
@@ -36,6 +35,10 @@
 [Spring WebFlux] --> [Spring Actuator]
 [Spring WebMVC] --> [Spring Cloud Consul]
 [Spring WebMVC] --> [Spring Cloud Vault]
+[Java Stream] --> [Java Persistence API]
+[Java Object Oriented Programming] --> [Java Memory Management]
+[Spring Core] --> [Spring Configuration Properties]
+[Spring Configuration Properties] --> [Spring Aspect Oriented Programming]
 ```
 
 ## Daftar Materi

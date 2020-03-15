@@ -3,7 +3,7 @@
 ![Learning Path Belajar Java](diagram/java-learning-path.svg)
 
 ## Java Standard Edition
-- Java Fundamental
+- [Java Fundamental](materi/java-fundamental/README.md)
 - Java Object Oriented Programming
 - Java Lambda
 - Java Internationalization

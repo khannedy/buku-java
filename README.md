@@ -1,6 +1,6 @@
 # Belajar Java
 
-![Learning Path Belajar Java](diagram/java-learning-path.png)
+![Learning Path Belajar Java](diagram/java-learning-path.svg)
 
 ## Java Standard Edition
 - Java Fundamental
@@ -37,4 +37,6 @@
 - Spring Security
 
 ## Other Framework
+- JUnit
+- Apache Maven
 - Project Reactor

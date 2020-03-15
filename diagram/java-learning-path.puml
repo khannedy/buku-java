@@ -32,10 +32,19 @@ file "Spring Configuration Properties" as springconfig
 file "Spring Actuator" as springactuator
 
 file "Project Reactor" as reactor 
+file "JUnit" as junit 
+file "Apache Maven" as maven 
+file "Integrated Development Environment" as ide 
 
-basic --> oop
+basic --> ide 
+ide --> oop 
 oop --> reflection
 oop --> lambda
+oop --> maven
+maven --> junit
+junit --> springcore
+junit --> jdbc
+junit --> beanvalidation
 reflection --> beanvalidation
 reflection --> springcore 
 collection --> thread 

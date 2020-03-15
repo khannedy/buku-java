@@ -37,6 +37,7 @@
 - Spring Security
 
 ## Other Framework
+- Integrated Development Environment 
 - JUnit
 - Apache Maven
 - Project Reactor

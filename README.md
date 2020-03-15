@@ -6,7 +6,7 @@
 - Java Fundamental
 - Java Object Oriented Programming
 - Java Lambda
-- Java Internalitionalization
+- Java Internationalization
 - Java Reflection
 - Java Memory Management
 - Java Collection

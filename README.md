@@ -1,6 +1,6 @@
 # Belajar Java
 
-![Learning Path Belajar Java](diagram/java-learning-path.svg)
+![Learning Path Belajar Java](diagram/java-learning-path.png)
 
 ## Java Standard Edition
 - [Java Fundamental](materi/java-fundamental/README.md)

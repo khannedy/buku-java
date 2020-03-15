@@ -1,0 +1,73 @@
+@startuml
+
+file "Java Fundamental" as basic
+file "Java Object Oriented Programming" as oop
+file "Java Lambda" as lambda
+file "Java Collection" as collection
+file "Java Stream" as stream 
+file "Java Reflection" as reflection
+file "Java Database Connectivity" as jdbc
+file "Java Internationalization" as i18n
+file "Java Thread" as thread
+file "Java Concurrency Utilities" as concurrency
+file "Java Memory Management" as memory 
+
+file "Bean Validation" as beanvalidation
+file "Java Persistence API" as jpa
+
+file "Spring Core" as springcore
+file "Spring Aspect Oriented Programming" as springaop
+file "Spring Data JPA" as springdatajpa
+file "Spring Data MongoDB" as springdatamongodb
+file "Spring WebMVC" as springwebmvc
+file "Spring WebFlux" as springwebflux
+file "Spring Kafka" as springkafka
+file "Spring Cloud Gateway" as springcloudgateway
+file "Spring Cloud Consul" as springconsul
+file "Spring Cloud Vault" as springvault
+file "Spring Security" as springsecurity
+file "Spring Task Execution and Scheduling" as springtask
+file "Spring RabbitMQ" as springrabbitmq
+file "Spring Configuration Properties" as springconfig
+file "Spring Actuator" as springactuator
+
+file "Project Reactor" as reactor 
+
+basic --> oop
+oop --> reflection
+oop --> lambda
+reflection --> beanvalidation
+reflection --> springcore 
+collection --> thread 
+oop --> i18n 
+i18n --> beanvalidation
+i18n --> springcore
+collection --> beanvalidation 
+collection --> jdbc 
+lambda --> collection
+thread --> concurrency
+thread --> stream
+jdbc --> jpa 
+beanvalidation --> jpa 
+springaop --> springdatajpa
+jpa --> springdatajpa
+concurrency --> reactor
+reactor --> springwebflux
+springwebmvc --> springwebflux
+springaop --> springtask
+concurrency --> springtask
+springdatajpa --> springdatamongodb
+springaop --> springkafka
+springaop --> springrabbitmq
+springwebflux --> springcloudgateway
+springwebflux --> springsecurity
+springwebmvc --> springsecurity
+springwebmvc --> springconsul
+springwebmvc --> springvault
+oop --> memory 
+springcore --> springconfig
+springconfig --> springaop
+springdatajpa --> springwebmvc
+springwebflux --> springactuator
+
+@enduml

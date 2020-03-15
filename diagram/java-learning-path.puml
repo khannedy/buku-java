@@ -2,15 +2,16 @@
 
 file "Java Fundamental" as basic
 file "Java Object Oriented Programming" as oop
+file "Java Generic" as generic
 file "Java Lambda" as lambda
 file "Java Collection" as collection
-file "Java Stream" as stream 
+file "Java Stream" as stream
 file "Java Reflection" as reflection
 file "Java Database Connectivity" as jdbc
 file "Java Internationalization" as i18n
 file "Java Thread" as thread
 file "Java Concurrency Utilities" as concurrency
-file "Java Memory Management" as memory 
+file "Java Memory Management" as memory
 
 file "Bean Validation" as beanvalidation
 file "Java Persistence API" as jpa
@@ -31,33 +32,34 @@ file "Spring RabbitMQ" as springrabbitmq
 file "Spring Configuration Properties" as springconfig
 file "Spring Actuator" as springactuator
 
-file "Project Reactor" as reactor 
-file "JUnit" as junit 
-file "Apache Maven" as maven 
-file "Integrated Development Environment" as ide 
+file "Project Reactor" as reactor
+file "JUnit" as junit
+file "Apache Maven" as maven
+file "Integrated Development Environment" as ide
 
-basic --> ide 
-ide --> oop 
+basic --> ide
+ide --> oop
 oop --> reflection
-oop --> lambda
+oop --> generic
+generic --> lambda
 oop --> maven
 maven --> junit
 junit --> springcore
 junit --> jdbc
 junit --> beanvalidation
 reflection --> beanvalidation
-reflection --> springcore 
-collection --> thread 
-oop --> i18n 
+reflection --> springcore
+collection --> thread
+oop --> i18n
 i18n --> beanvalidation
 i18n --> springcore
-collection --> beanvalidation 
-collection --> jdbc 
+collection --> beanvalidation
+collection --> jdbc
 lambda --> collection
 thread --> concurrency
 thread --> stream
-jdbc --> jpa 
-beanvalidation --> jpa 
+jdbc --> jpa
+beanvalidation --> jpa
 springaop --> springdatajpa
 jpa --> springdatajpa
 concurrency --> reactor
@@ -73,7 +75,7 @@ springwebflux --> springsecurity
 springwebmvc --> springsecurity
 springwebmvc --> springconsul
 springwebmvc --> springvault
-oop --> memory 
+oop --> memory
 springcore --> springconfig
 springconfig --> springaop
 springdatajpa --> springwebmvc

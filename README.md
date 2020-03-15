@@ -5,6 +5,7 @@
 ## Java Standard Edition
 - [Java Fundamental](materi/java-fundamental/README.md)
 - Java Object Oriented Programming
+- Java Generic
 - Java Lambda
 - Java Internationalization
 - Java Reflection
